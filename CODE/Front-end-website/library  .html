@@ -6,9 +6,19 @@
     <title>Sign in</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            filter: brightness(100%);
         }
         .container {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(95, 94, 94, 0.8);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,26 +35,26 @@
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #white;
+            border: 1px solid #fff;
             border-radius: 5px;
         }
         .form button {
             width: 100%;
             padding: 10px;
-            background: #green;
+            background: #4CAF50;  /* Green */
             border: none;
-            color: rgb(10, 10, 10);
+            color: white;
             border-radius: 5px;
             cursor: pointer;
         }
         .form button:hover {
-            background: #blue;
+            background: #45a049; /* Darker green */
         }
         .form p {
             text-align: center;
         }
         .form p a {
-            color: #blue;
+            color: #007BFF; /* Blue */
             text-decoration: none;
         }
         .form p a:hover {
@@ -52,18 +62,17 @@
         }
     </style>
 </head>
-</body>
-</html>
+<body>
     <div class="container">
         <div class="form">
             <h2>Sign in to access</h2>
-            <form action="library.html" method="post">
+            <form action="login.php" method="post">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <input  type="checkpassword" name="checkpassword" placeholder="Check Password" required>
+                <input type="password" name="checkpassword" placeholder="Confirm Password" required>
                 <button type="submit"><strong>Sign in</strong></button>
-                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                <p>Don't have an account? <a href="signup.html" style="color: yellow;">Sign up</a></p>
             </form>
             <footer>
                 <p>&copy; 2025 <strong>Library</strong></p>
@@ -71,4 +80,4 @@
         </div>
     </div>
 </body>
-</html></div>
+</html>

@@ -29,26 +29,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.container {
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-}
-
-.book {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
+main {
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.book h2 {
-    margin-top: 0;
-}
-
-.book p {
-    line-height: 1.6;
+h1, h2, h3 {
+    color: #333;
 }
 
 footer {
