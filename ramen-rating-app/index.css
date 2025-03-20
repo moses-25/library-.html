@@ -1,49 +1,79 @@
-/* General styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-/* Header styles */
-header {
-    background: grey;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-/* Navigation styles */
-nav {
-    display: flex;
-    justify-content: center;
-    background: grey;
-}
-
-nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-nav a:hover {
-    background: grey;
-}
-
-/* Main content styles */
-main {
     padding: 20px;
+    background-color: #f4f4f4;
 }
-
-/* Footer styles */
-footer {
-    background: #333;
-    color: white;
+#ramen-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.ramen-container {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+}
+.ramen-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ramen-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+#selected-ramen-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+#selected-ramen-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#new-ramen-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+#new-ramen-form input, #new-ramen-form textarea {
     width: 100%;
-    bottom: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#new-ramen-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#new-ramen-form button:hover {
+    background-color: #0056b3;
+}
+#add-ramen-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#add-ramen-button:hover {
+    background-color: #218838;
 }

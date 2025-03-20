@@ -3,39 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reman-rating-app</title>
-    <link rel="stylesheet" href="./library.css">
+    <title>Ramen Rating App</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div>
-        <h2>Reman-rating-app</h2>
-        <div class="reamn rating app">
-            <img src="https://moringa.instructure.com/courses/967/files/517801/preview" alt="image of food" width="100" height="100">
-            <img src="https://moringa.instructure.com/courses/967/files/517800/preview" alt="image of food" width="100" height="100">
-            <img src="https://moringa.instructure.com/courses/967/files/517799/preview" alt="image of food" width="100" height="100">
-        </div>
-        <br>
-        <div>
-            <img src="https://moringa.instructure.com/courses/967/files/517797/preview" alt="image of food" width="100" height="100">
-            <div class="form">
-                <h2>Rating:10/10
-                    <br>comment:
-                    <br><h4>my absolute fave!</h4>
-                </h2>
-                <form action="login.php" method="post">
-                    <input type="text" name="name" placeholder="name" required style="border: 2px solid black; font-weight: bold;">
-                    <br>
-                    <input type="text" name="restorant" placeholder="restorant" required style="border: 2px solid black; font-weight: bold;">
-                    <br>
-                    <input type="text" name="image" placeholder="image text" required style="border: 2px solid black; font-weight: bold;">
-                    <br>
-                    <input type="comment" name="comment" placeholder="comment" required style="border: 2px solid black; font-weight: bold;">
-                    <br>
-                    <input type="button" value="create" style="background-color: black; color: white; border: 2px solid black; font-weight: bold;">
-                </form>
-        </div>
-    </div>
-    <script src="/home/moses/MORINGA/index.js"></script>
     
+    <div id="ramen-menu"></div>
+    <button id="add-ramen-button">Add Ramen</button>
+
+    <div id="selected-ramen-container">
+        <h2 id="ramen-name"></h2>
+        <p>Restaurant: <span id="ramen-restaurant"></span></p>
+        <img id="selected-ramen-image" src="" alt="">
+        <p>Rating: <span id="rating-value"></span></p>
+        <p>Comment: <span id="comment-value"></span></p>
+    </div>
+    <form id="new-ramen-form">
+       
+        <input type="text" id="name" placeholder="Ramen Name" required>
+        <input type="text" id="restaurant" placeholder="Restaurant" required>
+        <input type="url" id="image" placeholder="Image URL" required>
+        <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5">
+        <textarea id="comment" placeholder="Comment"></textarea>
+        <button type="submit">Add Ramen</button>
+    </form>
+    <script src="./index.js"></script>
 </body>
 </html>
